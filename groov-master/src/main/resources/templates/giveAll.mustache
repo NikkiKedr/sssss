@@ -1,0 +1,33 @@
+<html lang="">
+<link rel="stylesheet" href="/styles/style.css">
+<head>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <title></title>
+</head>
+
+<body>
+
+<table class="cinereousTable">
+    <th>
+        Time
+        {{#temperatures}}
+            <div>{{date}}</div>
+        {{/temperatures}}
+    </th>
+
+    <th> Temperature
+        {{#temperatures}}
+            <div>{{temperature}}</div>
+        {{/temperatures}}</th>
+    <th> Humidity
+        {{#humidities}}
+            <div>{{humidity}}</div>
+        {{/humidities}}</th>
+    <th>Motor 1</th>
+    <th>Motor 2</th>
+</table>
+
+</body>
+
+</html>
